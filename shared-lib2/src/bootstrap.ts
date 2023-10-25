@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-const mount = (element) => {
+const mount = (element: HTMLDivElement) => {
   const productList = [];
 
   for (let i = 0; i <= 10; i++) {
@@ -14,7 +14,7 @@ const mount = (element) => {
 };
 
 if (process.env.NODE_ENV === "development") {
-  const element = document.querySelector("#shared2");
+  const element: HTMLDivElement | null = document.querySelector("#shared2");
   if (element) {
     mount(element);
   }

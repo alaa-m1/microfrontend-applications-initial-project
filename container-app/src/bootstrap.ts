@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { mount as mountProductsList } from "sharedLib2/SharedLib2Index";
 import { mount as mountSharedComponents } from "sharedLib1/SharedLib1Index";
 
