@@ -7,11 +7,12 @@ module.exports = {
   devServer: { port: 8000 },
   plugins: [
     new ModuleFederationPlugin({
-      name: "ecommerce-app",
+      name: "container_app",
       remotes: {
         sharedLib1: "shared_lib1@http://localhost:8001/remoteEntry.js",
         sharedLib2: "shared_lib2@http://localhost:8002/remoteEntry.js",
       },
+      shared: ["faker-js/faker"],
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",

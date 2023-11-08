@@ -12,7 +12,7 @@ module.exports = {
       exposes: {
         "./SharedLib2Index": "./src/bootstrap",
       },
-      shared: ["@faker-js/faker"],
+      shared: ["faker-js/faker"],
     }),
     new HtmlWebpackPlugin({
       template: "./public/index.html",
